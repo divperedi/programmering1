@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Saira+Condensed:wght@300&display=swap');
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: mediumpurple;
+    margin: 16px;
+    line-height: 0.8;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    width: 600px;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(hp.jpeg);
+    height: 50%;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: unset;
+}
+
+html {
+    height: 100%;
+}
+
+p,
+li {
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    width: 600px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+body {
+    margin: 40px auto;
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: white;
+    padding: 0 10px;
+}
+
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: #391c98;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    overflow: hidden;
+    border-style: hidden;
+    border-radius: 20px;
+    border-width: 5px;
+}
+
+.image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 3s;
+    -moz-transition: left 3s;
+    -o-transition: left 3s;
+    transition: left 3s;
+}
+
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slide-1:target~.image-container {
+    left: 0px;
+}
+
+#slide-2:target~.image-container {
+    left: -300px;
+}
+
+#slide-3:target~.image-container {
+    left: -600px;
+}
+
+#slide-4:target~.image-container {
+    left: -860px;
+}
+
+.buttons {
+    position: relative;
+    top: -20px;
+}
+
+.buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #3b4890;
+}
+
+body {
+    animation-duration: 2s;
+    animation-name: slide;
+    animation-delay: 0.3s;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 70%;
+        width: 450%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 50%;
+    }
+}
+
+.fade-in {
+    animation: fade-in 3s linear;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.gain-left {
+    transition: 1s;
+    text-align: left;
+}
+
+.gain-left:hover {
+    transform: scale(1.3);
+    margin-right: 150%;
+}
+
+.gain-center {
+    transition: 1s;
+    text-align: center;
+}
+
+.gain-center:hover {
+    transform: scale(1.3);
+    margin-left: 10%;
+}
+
+.shadow-text {
+    color: mediumpurple;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    line-height: 0.5;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.shadow-text:hover {
+    color: blueviolet;
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+}
+
+h2.change-text {
+    color: mediumpurple;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+h2.change-text:hover {
+    color: violet;
+}
