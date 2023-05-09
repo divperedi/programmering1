@@ -8,6 +8,7 @@
 
 html {
     background-size: 100%;
+    background-color: black;
 }
 
 body {
@@ -15,37 +16,24 @@ body {
 }
 
 .hero {
+    height: 35em;
     background-color: green;
     background-position: center;
     background-size:auto;
 }
 
-header section {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 85vh;
-    margin: auto;
+.hero .nav {
+    position: absolute;
+    top: 2em;
+    left: 2em;
 }
 
-div {
-    height: 100vh;
-    margin: 30px;
-    align-self: flex-start;
+.hero h1 {
+    position: relative;
+    margin: 0 auto;
 }
 
-div:nth-child(2) {
-    align-self: center;
-    font-size: 300%;
-    margin-top: 0;
-}
 
-div:nth-child(3) {
-    align-self: center;
-    margin-bottom: 120px;
-}
 
 .items {
     width: 100%;
@@ -62,34 +50,20 @@ div:nth-child(3) {
     background-size: cover;
 }
 
-p,
-h2 {
-    color: antiquewhite;
-}
-
-.box {
+.card {
+    width: 18rem;
     display: flex;
-    justify-content: center;
-    align-self: center;
-    height: 40vh;
-    width: 25%;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    border: solid white
 }
 
-.info {
-    text-align: center;
-    display: block;
-    font-size: 1em;
+.card-body {
+    flex: 1 1 auto;
+    padding: 1em;
 }
 
-#ninja {
-    align-self:stretch;
-    margin-top: 120px;
-}
-
-#nerd {
-    align-self:stretch;
-    margin-top: 120px;
+p, h3 {
+    color: antiquewhite;
 }
 
 button {
