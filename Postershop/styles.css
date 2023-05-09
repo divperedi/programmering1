@@ -1,16 +1,16 @@
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./poster.jpeg");
-    height: 40%;
-    background-position: inherit;
+    height: 50%;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0;
 }
 
 body,
 html {
     height: 100%;
+    margin: 0;
 }
 
 .hero-text {
@@ -20,4 +20,14 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.items{
+    width: 100vw;
+    height: 100vh;
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
 }
